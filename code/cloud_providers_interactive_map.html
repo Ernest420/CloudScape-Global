@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c888b167b43649dbcc677709133721b5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c888b167b43649dbcc677709133721b5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c888b167b43649dbcc677709133721b5 = L.map(
+                "map_c888b167b43649dbcc677709133721b5",
+                {
+                    center: [39.4268625, -13.553774999999998],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_74d92da3745ff742289062b091a05b7b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_74d92da3745ff742289062b091a05b7b.addTo(map_c888b167b43649dbcc677709133721b5);
+        
+    
+            var circle_marker_3b2d50c54208561253902271cd51fd2c = L.circleMarker(
+                [39.8283, -98.5795],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 1}
+            ).addTo(map_c888b167b43649dbcc677709133721b5);
+        
+    
+        var popup_0742aea2e567f06ce0b39201cba088a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b0fdd1769c9c10402991e2036879cf10 = $(`<div id="html_b0fdd1769c9c10402991e2036879cf10" style="width: 100.0%; height: 100.0%;">         <b>AWS - us-east-1</b><br>         <b>País:</b> USA<br>         <b>Escalabilidad:</b> 95/100<br>         <b>Costo:</b> 70/100<br>         <b>Zonas Disponibilidad:</b> 6<br>         <b>Nivel Servicio:</b> 99.99%<br>         <b>Puntuación Valor:</b> 62.5/100         </div>`)[0];
+                popup_0742aea2e567f06ce0b39201cba088a3.setContent(html_b0fdd1769c9c10402991e2036879cf10);
+            
+        
+
+        circle_marker_3b2d50c54208561253902271cd51fd2c.bindPopup(popup_0742aea2e567f06ce0b39201cba088a3)
+        ;
+
+        
+    
+    
+            circle_marker_3b2d50c54208561253902271cd51fd2c.bindTooltip(
+                `<div>
+                     AWS - us-east-1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b45db3612e27f9d48d665e964e2994c = L.circleMarker(
+                [51.1657, 10.4515],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 1}
+            ).addTo(map_c888b167b43649dbcc677709133721b5);
+        
+    
+        var popup_17180ec06285ef0e7ae31c05de06fff5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc52bd28245f88bd00c35814ab2a467c = $(`<div id="html_cc52bd28245f88bd00c35814ab2a467c" style="width: 100.0%; height: 100.0%;">         <b>AWS - eu-central-1</b><br>         <b>País:</b> Germany<br>         <b>Escalabilidad:</b> 92/100<br>         <b>Costo:</b> 75/100<br>         <b>Zonas Disponibilidad:</b> 3<br>         <b>Nivel Servicio:</b> 99.95%<br>         <b>Puntuación Valor:</b> 58.5/100         </div>`)[0];
+                popup_17180ec06285ef0e7ae31c05de06fff5.setContent(html_cc52bd28245f88bd00c35814ab2a467c);
+            
+        
+
+        circle_marker_0b45db3612e27f9d48d665e964e2994c.bindPopup(popup_17180ec06285ef0e7ae31c05de06fff5)
+        ;
+
+        
+    
+    
+            circle_marker_0b45db3612e27f9d48d665e964e2994c.bindTooltip(
+                `<div>
+                     AWS - eu-central-1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b307ae899404dd9234abb5fd168bf7ab = L.circleMarker(
+                [41.8781, -93.0977],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 1}
+            ).addTo(map_c888b167b43649dbcc677709133721b5);
+        
+    
+        var popup_9193421f9bd2f1d56949f968b5edff57 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c0d39777d8fb8559eae1d45852ac769 = $(`<div id="html_8c0d39777d8fb8559eae1d45852ac769" style="width: 100.0%; height: 100.0%;">         <b>Google Cloud - us-central1</b><br>         <b>País:</b> USA<br>         <b>Escalabilidad:</b> 90/100<br>         <b>Costo:</b> 65/100<br>         <b>Zonas Disponibilidad:</b> 4<br>         <b>Nivel Servicio:</b> 99.95%<br>         <b>Puntuación Valor:</b> 62.5/100         </div>`)[0];
+                popup_9193421f9bd2f1d56949f968b5edff57.setContent(html_8c0d39777d8fb8559eae1d45852ac769);
+            
+        
+
+        circle_marker_b307ae899404dd9234abb5fd168bf7ab.bindPopup(popup_9193421f9bd2f1d56949f968b5edff57)
+        ;
+
+        
+    
+    
+            circle_marker_b307ae899404dd9234abb5fd168bf7ab.bindTooltip(
+                `<div>
+                     Google Cloud - us-central1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d4f415e5722ccfc93a87ac898f53b2e7 = L.circleMarker(
+                [52.1326, 5.2913],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 1}
+            ).addTo(map_c888b167b43649dbcc677709133721b5);
+        
+    
+        var popup_d0a353d002712d69d1c76260ec1548cf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c60c48bba49999494bd4f1df07679ec7 = $(`<div id="html_c60c48bba49999494bd4f1df07679ec7" style="width: 100.0%; height: 100.0%;">         <b>Google Cloud - europe-west4</b><br>         <b>País:</b> Netherlands<br>         <b>Escalabilidad:</b> 88/100<br>         <b>Costo:</b> 72/100<br>         <b>Zonas Disponibilidad:</b> 3<br>         <b>Nivel Servicio:</b> 99.9%<br>         <b>Puntuación Valor:</b> 58.0/100         </div>`)[0];
+                popup_d0a353d002712d69d1c76260ec1548cf.setContent(html_c60c48bba49999494bd4f1df07679ec7);
+            
+        
+
+        circle_marker_d4f415e5722ccfc93a87ac898f53b2e7.bindPopup(popup_d0a353d002712d69d1c76260ec1548cf)
+        ;
+
+        
+    
+    
+            circle_marker_d4f415e5722ccfc93a87ac898f53b2e7.bindTooltip(
+                `<div>
+                     Google Cloud - europe-west4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_337c34731781475f531f6fd00bf27acd = L.circleMarker(
+                [37.0902, -95.7129],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(map_c888b167b43649dbcc677709133721b5);
+        
+    
+        var popup_76bd1a37cac1eae7dd9eb36511b38c8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0a1ddfd494c183eaf4889736a123e5a5 = $(`<div id="html_0a1ddfd494c183eaf4889736a123e5a5" style="width: 100.0%; height: 100.0%;">         <b>Azure - East US</b><br>         <b>País:</b> USA<br>         <b>Escalabilidad:</b> 93/100<br>         <b>Costo:</b> 78/100<br>         <b>Zonas Disponibilidad:</b> 5<br>         <b>Nivel Servicio:</b> 99.99%<br>         <b>Puntuación Valor:</b> 57.5/100         </div>`)[0];
+                popup_76bd1a37cac1eae7dd9eb36511b38c8d.setContent(html_0a1ddfd494c183eaf4889736a123e5a5);
+            
+        
+
+        circle_marker_337c34731781475f531f6fd00bf27acd.bindPopup(popup_76bd1a37cac1eae7dd9eb36511b38c8d)
+        ;
+
+        
+    
+    
+            circle_marker_337c34731781475f531f6fd00bf27acd.bindTooltip(
+                `<div>
+                     Azure - East US
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_16dff5be852ada61307a9f4943980503 = L.circleMarker(
+                [52.1326, 5.2913],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 1}
+            ).addTo(map_c888b167b43649dbcc677709133721b5);
+        
+    
+        var popup_3d6e72a63ef8cc99d41c718eca8d4c07 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e07688a8cf9fa5de10091e3631742eb3 = $(`<div id="html_e07688a8cf9fa5de10091e3631742eb3" style="width: 100.0%; height: 100.0%;">         <b>Azure - West Europe</b><br>         <b>País:</b> Netherlands<br>         <b>Escalabilidad:</b> 91/100<br>         <b>Costo:</b> 76/100<br>         <b>Zonas Disponibilidad:</b> 4<br>         <b>Nivel Servicio:</b> 99.95%<br>         <b>Puntuación Valor:</b> 57.5/100         </div>`)[0];
+                popup_3d6e72a63ef8cc99d41c718eca8d4c07.setContent(html_e07688a8cf9fa5de10091e3631742eb3);
+            
+        
+
+        circle_marker_16dff5be852ada61307a9f4943980503.bindPopup(popup_3d6e72a63ef8cc99d41c718eca8d4c07)
+        ;
+
+        
+    
+    
+            circle_marker_16dff5be852ada61307a9f4943980503.bindTooltip(
+                `<div>
+                     Azure - West Europe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_57904822e09385335cb68849f84f5680 = L.circleMarker(
+                [20.5937, 78.9629],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 1}
+            ).addTo(map_c888b167b43649dbcc677709133721b5);
+        
+    
+        var popup_38b13177ebd639f8dac524ae7460b7ea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b985e4aa8f571684f8a940f6d862d76e = $(`<div id="html_b985e4aa8f571684f8a940f6d862d76e" style="width: 100.0%; height: 100.0%;">         <b>AWS - ap-south-1</b><br>         <b>País:</b> India<br>         <b>Escalabilidad:</b> 85/100<br>         <b>Costo:</b> 80/100<br>         <b>Zonas Disponibilidad:</b> 3<br>         <b>Nivel Servicio:</b> 99.9%<br>         <b>Puntuación Valor:</b> 52.5/100         </div>`)[0];
+                popup_38b13177ebd639f8dac524ae7460b7ea.setContent(html_b985e4aa8f571684f8a940f6d862d76e);
+            
+        
+
+        circle_marker_57904822e09385335cb68849f84f5680.bindPopup(popup_38b13177ebd639f8dac524ae7460b7ea)
+        ;
+
+        
+    
+    
+            circle_marker_57904822e09385335cb68849f84f5680.bindTooltip(
+                `<div>
+                     AWS - ap-south-1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e3fba60623c728195ce4c0735a6b3ab = L.circleMarker(
+                [20.5937, 78.9629],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 1}
+            ).addTo(map_c888b167b43649dbcc677709133721b5);
+        
+    
+        var popup_d3c69d9b1352a28ca1ba7947b5b32d82 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44f9d5ae4dc3c4c9aa26e7d0d171dab7 = $(`<div id="html_44f9d5ae4dc3c4c9aa26e7d0d171dab7" style="width: 100.0%; height: 100.0%;">         <b>Azure - Central India</b><br>         <b>País:</b> India<br>         <b>Escalabilidad:</b> 87/100<br>         <b>Costo:</b> 82/100<br>         <b>Zonas Disponibilidad:</b> 3<br>         <b>Nivel Servicio:</b> 99.9%<br>         <b>Puntuación Valor:</b> 52.5/100         </div>`)[0];
+                popup_d3c69d9b1352a28ca1ba7947b5b32d82.setContent(html_44f9d5ae4dc3c4c9aa26e7d0d171dab7);
+            
+        
+
+        circle_marker_0e3fba60623c728195ce4c0735a6b3ab.bindPopup(popup_d3c69d9b1352a28ca1ba7947b5b32d82)
+        ;
+
+        
+    
+    
+            circle_marker_0e3fba60623c728195ce4c0735a6b3ab.bindTooltip(
+                `<div>
+                     Azure - Central India
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_5f73a0e5c6784485425f01bae02f36da = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_3e02314a7636ec9fd736a15a385ab1d8 = L.circleMarker(
+                [39.8283, -98.5795],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5f73a0e5c6784485425f01bae02f36da);
+        
+    
+        var popup_d8a5267a2817760475af172325067b47 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_fc29e12d8231d769a3b3882b91298942 = $(`<div id="html_fc29e12d8231d769a3b3882b91298942" style="width: 100.0%; height: 100.0%;"><b>AWS</b><br>us-east-1</div>`)[0];
+                popup_d8a5267a2817760475af172325067b47.setContent(html_fc29e12d8231d769a3b3882b91298942);
+            
+        
+
+        circle_marker_3e02314a7636ec9fd736a15a385ab1d8.bindPopup(popup_d8a5267a2817760475af172325067b47)
+        ;
+
+        
+    
+    
+            var circle_marker_7c984e5551da98ad8f633feb2e818e34 = L.circleMarker(
+                [51.1657, 10.4515],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5f73a0e5c6784485425f01bae02f36da);
+        
+    
+        var popup_98b009816aa91a214a859111603702a7 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a6a60a974116384f5f76137bb9ae855f = $(`<div id="html_a6a60a974116384f5f76137bb9ae855f" style="width: 100.0%; height: 100.0%;"><b>AWS</b><br>eu-central-1</div>`)[0];
+                popup_98b009816aa91a214a859111603702a7.setContent(html_a6a60a974116384f5f76137bb9ae855f);
+            
+        
+
+        circle_marker_7c984e5551da98ad8f633feb2e818e34.bindPopup(popup_98b009816aa91a214a859111603702a7)
+        ;
+
+        
+    
+    
+            var circle_marker_3bc1f3064f19caf9eb71787c93d52221 = L.circleMarker(
+                [20.5937, 78.9629],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5f73a0e5c6784485425f01bae02f36da);
+        
+    
+        var popup_ccdf4ada910bbc0ac5669967cf8c898b = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4b49417caac67fe2864e65cec40e3656 = $(`<div id="html_4b49417caac67fe2864e65cec40e3656" style="width: 100.0%; height: 100.0%;"><b>AWS</b><br>ap-south-1</div>`)[0];
+                popup_ccdf4ada910bbc0ac5669967cf8c898b.setContent(html_4b49417caac67fe2864e65cec40e3656);
+            
+        
+
+        circle_marker_3bc1f3064f19caf9eb71787c93d52221.bindPopup(popup_ccdf4ada910bbc0ac5669967cf8c898b)
+        ;
+
+        
+    
+    
+            feature_group_5f73a0e5c6784485425f01bae02f36da.addTo(map_c888b167b43649dbcc677709133721b5);
+        
+    
+            var feature_group_c968711d50d3e3f6b00cb35b91fa371b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_539e4bc779b7288fdb26b30f57c4a661 = L.circleMarker(
+                [41.8781, -93.0977],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c968711d50d3e3f6b00cb35b91fa371b);
+        
+    
+        var popup_b5965809c8fcdcd4e960025005e7c1e1 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_7f71ac890e2b2fff16ade1564638e4c7 = $(`<div id="html_7f71ac890e2b2fff16ade1564638e4c7" style="width: 100.0%; height: 100.0%;"><b>Google Cloud</b><br>us-central1</div>`)[0];
+                popup_b5965809c8fcdcd4e960025005e7c1e1.setContent(html_7f71ac890e2b2fff16ade1564638e4c7);
+            
+        
+
+        circle_marker_539e4bc779b7288fdb26b30f57c4a661.bindPopup(popup_b5965809c8fcdcd4e960025005e7c1e1)
+        ;
+
+        
+    
+    
+            var circle_marker_587d1770f0d950f4e1bb06a787e2becf = L.circleMarker(
+                [52.1326, 5.2913],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c968711d50d3e3f6b00cb35b91fa371b);
+        
+    
+        var popup_c37915fa4e43401d93afbe9b0fea9486 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6104f49c90bf0477fe3b77eaadba027f = $(`<div id="html_6104f49c90bf0477fe3b77eaadba027f" style="width: 100.0%; height: 100.0%;"><b>Google Cloud</b><br>europe-west4</div>`)[0];
+                popup_c37915fa4e43401d93afbe9b0fea9486.setContent(html_6104f49c90bf0477fe3b77eaadba027f);
+            
+        
+
+        circle_marker_587d1770f0d950f4e1bb06a787e2becf.bindPopup(popup_c37915fa4e43401d93afbe9b0fea9486)
+        ;
+
+        
+    
+    
+            feature_group_c968711d50d3e3f6b00cb35b91fa371b.addTo(map_c888b167b43649dbcc677709133721b5);
+        
+    
+            var feature_group_ce554c9833145067c5e0a6e7e1320ae6 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_a8e53e9afc854290952a7ddaaffc40c3 = L.circleMarker(
+                [37.0902, -95.7129],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ce554c9833145067c5e0a6e7e1320ae6);
+        
+    
+        var popup_201b54d85e8ca3b91447eb73786d8ad7 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_86b5e0aaae64428152b899883fb0d617 = $(`<div id="html_86b5e0aaae64428152b899883fb0d617" style="width: 100.0%; height: 100.0%;"><b>Azure</b><br>East US</div>`)[0];
+                popup_201b54d85e8ca3b91447eb73786d8ad7.setContent(html_86b5e0aaae64428152b899883fb0d617);
+            
+        
+
+        circle_marker_a8e53e9afc854290952a7ddaaffc40c3.bindPopup(popup_201b54d85e8ca3b91447eb73786d8ad7)
+        ;
+
+        
+    
+    
+            var circle_marker_f6db86b048467766c6ec54090293677e = L.circleMarker(
+                [52.1326, 5.2913],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ce554c9833145067c5e0a6e7e1320ae6);
+        
+    
+        var popup_6db812f181c6f6912575c62fa16d96bc = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_9342790bd752b3db6b4f3cea0d9d60ab = $(`<div id="html_9342790bd752b3db6b4f3cea0d9d60ab" style="width: 100.0%; height: 100.0%;"><b>Azure</b><br>West Europe</div>`)[0];
+                popup_6db812f181c6f6912575c62fa16d96bc.setContent(html_9342790bd752b3db6b4f3cea0d9d60ab);
+            
+        
+
+        circle_marker_f6db86b048467766c6ec54090293677e.bindPopup(popup_6db812f181c6f6912575c62fa16d96bc)
+        ;
+
+        
+    
+    
+            var circle_marker_9ea75934651ae28b106f68c8917dfcc7 = L.circleMarker(
+                [20.5937, 78.9629],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ce554c9833145067c5e0a6e7e1320ae6);
+        
+    
+        var popup_4c3490d08ce2881f833ccb684698a1d3 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_9e489d1c70bc7ad8917f39e8225c8a87 = $(`<div id="html_9e489d1c70bc7ad8917f39e8225c8a87" style="width: 100.0%; height: 100.0%;"><b>Azure</b><br>Central India</div>`)[0];
+                popup_4c3490d08ce2881f833ccb684698a1d3.setContent(html_9e489d1c70bc7ad8917f39e8225c8a87);
+            
+        
+
+        circle_marker_9ea75934651ae28b106f68c8917dfcc7.bindPopup(popup_4c3490d08ce2881f833ccb684698a1d3)
+        ;
+
+        
+    
+    
+            feature_group_ce554c9833145067c5e0a6e7e1320ae6.addTo(map_c888b167b43649dbcc677709133721b5);
+        
+    
+            var layer_control_4c3953354a74ae536a50605c4b18179a_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_74d92da3745ff742289062b091a05b7b,
+                },
+                overlays :  {
+                    "AWS" : feature_group_5f73a0e5c6784485425f01bae02f36da,
+                    "Google Cloud" : feature_group_c968711d50d3e3f6b00cb35b91fa371b,
+                    "Azure" : feature_group_ce554c9833145067c5e0a6e7e1320ae6,
+                },
+            };
+            let layer_control_4c3953354a74ae536a50605c4b18179a = L.control.layers(
+                layer_control_4c3953354a74ae536a50605c4b18179a_layers.base_layers,
+                layer_control_4c3953354a74ae536a50605c4b18179a_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_c888b167b43649dbcc677709133721b5);
+
+        
+</script>
+</html>

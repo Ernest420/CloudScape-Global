@@ -1,0 +1,9 @@
+provider,region,country,latitude,longitude,scalability_score,cost_score,availability_zones,service_level
+AWS,us-east-1,USA,39.8283,-98.5795,95,70,6,99.99
+AWS,eu-central-1,Germany,51.1657,10.4515,92,75,3,99.95
+Google Cloud,us-central1,USA,41.8781,-93.0977,90,65,4,99.95
+Google Cloud,europe-west4,Netherlands,52.1326,5.2913,88,72,3,99.9
+Azure,East US,USA,37.0902,-95.7129,93,78,5,99.99
+Azure,West Europe,Netherlands,52.1326,5.2913,91,76,4,99.95
+AWS,ap-south-1,India,20.5937,78.9629,85,80,3,99.9
+Azure,Central India,India,20.5937,78.9629,87,82,3,99.9
